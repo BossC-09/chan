@@ -1,0 +1,208 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    width: 90%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo{
+    width: 70px;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+    color: white;
+}
+
+nav ul li a{
+	color: white; 
+	transition: all ease 1s;
+	border-radius: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    text-decoration: none;
+    text-shadow: -2px -2px 0 maroon,
+    0   -2px 0 maroon,
+    2px -2px 0 maroon,
+    2px  0   0 maroon,
+    2px  2px 0 maroon,
+    0    2px 0 maroon,
+   -2px  2px 0 maroon,
+   -2px  0   0 maroon;
+}
+
+nav ul li a:hover{
+    -webkit-text-stroke: 2px maroon;
+    color:transparent;
+    text-shadow: -1px -1px 0 white,
+    0   -1px 0 white,
+    1px -1px 0 white,
+    1px  0   0 white,
+    1px  1px 0 white,
+    0    1px 0 white,
+   -1px  1px 0 white,
+   -1px  0   0 white;
+}
+
+h1 {
+    color:white;
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+    text-shadow: -3px -3px 0 maroon,
+    0   -3px 0 maroon,
+    3px -3px 0 maroon,
+    3px  0   0 maroon,
+    3px  3px 0 maroon,
+    0    3px 0 maroon,
+   -3px  3px 0 maroon,
+   -3px  0   0 maroon;
+    transition: 0.5s;
+    margin-top: 8%;
+}
+
+h1:hover{
+    -webkit-text-stroke: 2px white;
+    color:transparent;
+}
+
+.vid {
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9){
+    .vid{
+        position: fixed;
+ right: 0; 
+ bottom: 0;
+ min-width: 100%; 
+ min-height: 100%;
+ width: auto; 
+ height: auto; 
+ z-index: -100;
+ background-size: cover;
+    }
+}
+
+/* Form Styles */
+#status-form {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background:linear-gradient(45deg,rgba(255,255,255, .6),rgba(165, 9, 59, 0.865));
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#status-form label {
+    display: block;
+    color: black;
+    text-shadow: -1px -1px 0 white,
+    0   -1px 0 white,
+    1px -1px 0 white,
+    1px  0   0 white,
+    1px  1px 0 white,
+    0    1px 0 white,
+   -1px  1px 0 white,
+   -1px  0   0 white;
+    margin-bottom: 5px;
+}
+
+#status-form input[type="text"] {
+    width: 96.5%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid maroon;
+    border-radius: 5px;
+}
+#status-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid maroon;
+    border-radius: 5px;
+}
+
+#status-form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: 20px;
+    background-color: maroon;
+    color: #fff;
+    text-shadow: 1px 1px black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#status-form button:hover {
+    background:linear-gradient(45deg,rgba(165, 9, 59, 0.865),rgba(255,255,255, .6));
+}
+
+/* Display Page Styles */
+#status-list {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    color: black;
+    text-shadow: -1px -1px 0 white,
+    0   -1px 0 white,
+    1px -1px 0 white,
+    1px  0   0 white,
+    1px  1px 0 white,
+    0    1px 0 white,
+   -1px  1px 0 white,
+   -1px  0   0 white;
+    background:linear-gradient(45deg,rgba(255,255,255, .6),rgba(165, 9, 59, 0.865));
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #status-form, #status-list {
+        width: 95%;
+    }
+}
+
+#current-time-date {
+    background:linear-gradient(45deg,rgba(165, 9, 59, 0.865),rgba(255,255,255, .6));
+    border: none; /* Remove default border */
+    color: black;
+    text-shadow: -1px -1px 0 white,
+    0   -1px 0 white,
+    1px -1px 0 white,
+    1px  0   0 white,
+    1px  1px 0 white,
+    0    1px 0 white,
+   -1px  1px 0 white,
+   -1px  0   0 white;
+    padding: 12px 28px; /* Padding around text */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer; /* Cursor pointer on hover */
+    border-radius: 12px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+#current-time-date:hover {
+    background:linear-gradient(45deg,rgba(255,255,255, .6),rgba(165, 9, 59, 0.865)); /* Darker green on hover */
+}
